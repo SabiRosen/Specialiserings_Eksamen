@@ -1,0 +1,12 @@
+.button {
+  width: 65%;
+  padding: 0.9rem;
+  background: #f5a623;
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer; /*for egen skyld under kodning*/
+  letter-spacing: 0.04em;
+}

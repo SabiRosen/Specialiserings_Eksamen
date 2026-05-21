@@ -1,0 +1,46 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.welcome {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle {
+  color: #a8c4d0;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.input {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease, background 0.2s ease;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.input:focus {
+  border-color: #f5a623;
+  background: rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: #406F8C;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.menuIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

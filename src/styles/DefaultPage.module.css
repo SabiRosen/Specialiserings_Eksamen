@@ -1,0 +1,23 @@
+.page {
+  flex: 1;
+  background: #163548;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  object-fit: contain;
+  margin-bottom: -1rem;
+}

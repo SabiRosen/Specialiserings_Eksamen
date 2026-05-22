@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/MiniGame1.module.css";
 import caveWall from "../assets/images/cave_wall_shadows.jpg";
+import { questions2 } from "../data/questions";
 
 const shadows = [
     { id: "person", emoji: "🚶", label: "Person", top: "62%", left: "84%" },
@@ -50,7 +51,11 @@ export default function MiniGame1() {
         state: { 
             points, 
             nextRoute: "/story",
-            nextState: { startIndex: 4, nextRoute: "/minigame2" }
+            nextState: { 
+                startIndex: 4, 
+                nextRoute: "/quiz",
+                nextState: { questions: questions2, nextRoute: "/minigame2" }
+             }
          } 
         });
     }, 600);

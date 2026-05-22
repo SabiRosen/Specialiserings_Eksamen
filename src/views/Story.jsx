@@ -8,6 +8,7 @@ export default function Story() {
   const { state } = useLocation();
   const startIndex = state?.startIndex ?? 0;
   const nextRoute = state?.nextRoute ?? "/quiz";
+  const nextState = state?.nextState ?? null;
 
   const [current, setCurrent] = useState(startIndex);
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ export default function Story() {
 
   function handleNext() {
     if (isLast) {
-      navigate(nextRoute);
+      navigate(nextRoute, { state: nextState});
     } else {
       setCurrent(current + 1);
     }

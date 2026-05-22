@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import CTAButton from "../components/CTAButton";
 import styles from "../styles/Intro.module.css";
+import { questions1 } from "../data/questions";
 
 export default function Intro() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function Intro() {
         </p>
       </div>
       <div className={styles.button}>
-        <CTAButton label="Start rejsen" onClick={() => navigate("/story")} />
+        <CTAButton label="Start rejsen" onClick={() => navigate("/story", { state: { startIndex: 0, nextRoute: "/quiz", nextState: { questions: questions1, nextRoute: "/minigame1" } } })} />
       </div>
     </div>
   );

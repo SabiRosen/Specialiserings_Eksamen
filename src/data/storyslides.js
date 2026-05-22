@@ -10,19 +10,19 @@ import slide8 from "../assets/images/8-hule-billede.jpg";
 export const slides = [
     { id: 1, 
         image: slide1, 
-        text: "Dybt inde i en mørk hule..." 
+        text: "Dybt inde i en mørk hule sidder en gruppe børn. De har været der hele deres liv og kan kun kigge lige frem. Bag dem brænder et bål, men de vender sig ikke om. På væggen foran dem ser de skygger som bevæge sig. Børnene tror, at skyggerne er virkeligheden, fordi de aldrig har set andet." 
     },
     { id: 2, 
         image: slide2, 
-        text: "Børnene begynder at give navn..." 
+        text: "Børnene begynder at give navn til skyggerne. Når en bestemt skygge dukker op, prøver de at gætte, hvad der kommer næste gang. Den person, der er bedst til at huske mønstrene, bliver respekteret af de andre. Ingen stiller spørgsmål ved, om der findes en anden verden udenfor hulen. For børnene er skyggerne hele sandheden." 
     },
     { id: 3, 
         image: slide3, 
-        text: "En af børnene begynder at undre sig..." 
+        text: "En af børnene begynder at undre sig. Han tænker over, hvor skyggerne kommer fra, og hvorfor de altid bevæger sig på samme måde. En dag rejser han sig forsigtigt op og opdager bålet bag sig. Lyset gør ondt i hans øjne, og han bliver forvirret. Han forstår ikke, hvad han ser." 
     },
     { id: 4, 
         image: slide4, 
-        text: "Barnet opdager, at skyggerne..." 
+        text: "Barnet opdager, at skyggerne kun er kopier af virkelige ting. Han bliver chokeret over at finde ud af, at hele hans liv har været bygget på en illusion. Samtidig føler han sig nysgerrig efter at opdage mere. Han beslutter sig for at gå mod hulens udgang." 
     },
     { id: 5, 
         image: slide5, 

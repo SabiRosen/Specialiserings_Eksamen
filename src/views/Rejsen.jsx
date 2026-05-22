@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/Rejsen.module.css";
+import rejsenBag from "../assets/images/rejsen_bag.jpg";
 
 const levels = [
   { id: 1, state: "completed", position: { top: "12%", left: "20%" } },
@@ -52,21 +53,23 @@ export default function Rejsen() {
       </div>
 
       <div className={styles.map}>
-        <div className={styles.cavePlaceholder} />
+        <img src={rejsenBag} alt="Baggrund" className={styles.caveImage} />
 
         <svg className={styles.path} viewBox="0 0 360 600" preserveAspectRatio="none">
-        <path
-            d="M 70 60 C 80 120, 260 140, 250 210 C 240 280, 80 300, 130 390 C 155 430, 80 480, 90 540 C 95 570, 220 580, 240 620"
-            stroke="#5a8fa8"
-            strokeWidth="32"
-            fill="none"
-            strokeLinecap="round"
-        />
-        </svg>
+  <path
+    d="M 72 72 C 100 100, 220 130, 245 168 C 270 210, 180 240, 140 312 C 110 360, 70 390, 58 432 C 45 480, 180 490, 224 528"
+    stroke="#5a8fa8"
+    strokeWidth="32"
+    fill="none"
+    strokeLinecap="round"
+  />
+</svg>
 
         {levels.map((level) => (
           <LevelNode key={level.id} level={level} />
         ))}
+
+        <div className={styles.gradient} />
       </div>
     </div>
   );
